@@ -5,17 +5,17 @@ const reducer = (state = initialState, action) => {
     case 'INC':  
       return {
         ...state,
-        value: state.counter + 1
+        counter: state.counter + 1
       };
     case 'DEC':  
       return {
         ...state,
-        value: state.counter - 1
+        counter: state.counter - 1
       };
     case 'RND':  
       return {
         ...state,
-        value: state.counter * action.payload
+        counter: state.counter * action.payload
       };
     default:
       return state;
